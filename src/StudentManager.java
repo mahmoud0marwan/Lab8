@@ -10,7 +10,7 @@ public class StudentManager {
     }
 
     public List<Course> browseCourses() {
-        return db.loadCourses();
+        return Admin.viewApprovedCourses(db);
     }
 
     public void enrollInCourse(String studentId, String courseId) {

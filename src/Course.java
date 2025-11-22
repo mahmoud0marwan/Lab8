@@ -8,6 +8,7 @@ public class Course {
     private String description;
     private List<Lesson> lessons;
     private List<Student> students;
+    private String courseStatus;
     private transient StudentManager studentManager;
 
     public Course(String courseId, String instructorId, String title, String description, StudentManager studentManager) {
@@ -18,6 +19,7 @@ public class Course {
         this.lessons = new ArrayList<>();
         this.students = new ArrayList<>();
         this.studentManager = studentManager;
+        this.courseStatus="Pending";
     }
 
     public void setStudentManager(StudentManager studentManager) {
@@ -99,5 +101,13 @@ public class Course {
                 return true;
         }
         return false;
+    }
+
+    public void setCourseStatus(String courseStatus) {
+        this.courseStatus = courseStatus;
+    }
+
+    public String getCourseStatus() {
+        return courseStatus;
     }
 }
