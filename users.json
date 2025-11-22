@@ -1,0 +1,51 @@
+[
+  {
+    "enrolledCourses": [],
+    "progress": {},
+    "userId": "U-407df499",
+    "username": "john_doe",
+    "email": "john@example.com",
+    "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "Student"
+  },
+  {
+    "enrolledCourses": [],
+    "progress": {},
+    "userId": "U-23fb96fc",
+    "username": "jane_smith",
+    "email": "jane@example.com",
+    "passwordHash": "c6ba91b90d922e159893f46c387e5dc1b3dc5c101a5a4522f03b987177a24a91",
+    "role": "Student"
+  },
+  {
+    "createdCourses": [],
+    "userId": "U-1a6149fb",
+    "username": "prof_james",
+    "email": "james@university.edu",
+    "passwordHash": "63cb9c6fa2d65784658539a93ad47f2274a02ddff344537beb97bd399938ad22",
+    "role": "Instructor"
+  },
+  {
+    "createdCourses": [
+      "C-d1c75e28"
+    ],
+    "userId": "U-aaf4b17d",
+    "username": "Prof. Java",
+    "email": "prof@test.com",
+    "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "Instructor"
+  },
+  {
+    "enrolledCourses": [
+      "C-d1c75e28"
+    ],
+    "progress": {
+      "C-d1c75e28": 0
+    },
+    "userId": "U-53824e7b",
+    "username": "Junior Dev",
+    "email": "student@test.com",
+    "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "Student"
+  }
+]
