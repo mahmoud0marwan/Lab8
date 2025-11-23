@@ -53,11 +53,11 @@ public class Admin  extends  User{
         }
         return rejectedCourses;
     }
-    private void approveCourse(Course course)
+    public void approveCourse(Course course)
     {
         course.setCourseStatus("Approved");
     }
-    private void rejectCourse(Course course)
+    public void rejectCourse(Course course)
     {
         course.setCourseStatus("Rejected");
     }
