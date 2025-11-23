@@ -7,6 +7,7 @@ public class Student extends User {
     private List<String> enrolledCourses = new ArrayList<>();
     private Map<String, Integer> progress = new HashMap<>();
     private transient CourseManager courseManager;
+    private Map<String , Integer> quizScores;
 
     public Student() {
         this.role = "Student";
@@ -19,6 +20,17 @@ public class Student extends User {
         this.username = username;
         this.email = email;
         this.passwordHash = AuthManager.hashPassword(password);
+        this.quizScores = new HashMap<>();
+    }
+
+    public int takeQuiz(String lessonId , Quiz quiz , List<Integer> answers) {
+        int score = quiz.grade(answers);
+        quizScores.put(lessonId, score);
+        return score;
+    }
+
+    int getQuizScore(String lessonId) {
+        return quizScores.getOrDefault(lessonId , -1);
     }
 
     public void setCourseManager(CourseManager courseManager) {
