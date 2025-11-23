@@ -34,7 +34,4 @@ public class Quiz {
         return score;
     }
 
-    public int getPassingScore() {
-
-    }
 }
