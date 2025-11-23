@@ -93,3 +93,33 @@ public class Student extends User {
         return new HashMap<>(progress);
     }
 }
+private Map<String, Integer> quizScores = new HashMap<>();
+private List<String> earnedCertificates = new ArrayList<>();
+
+
+public void recordQuizScore(String lessonId, int score) {
+    quizScores.put(lessonId, score);
+}
+
+public boolean hasPassedQuiz(String lessonId, int passingScore) {
+    Integer sc = quizScores.get(lessonId);
+    return sc != null && sc >= passingScore;
+}
+
+public boolean hasCompletedCourse(Course course) {
+    for (Lesson l : course.getLessons()) {
+        if (l.getQuiz() == null) continue;
+        int pass = l.getQuiz().getPassingScore();
+        Integer studentScore = quizScores.get(l.getLessonId());
+        if (studentScore == null || studentScore < pass) return false;
+    }
+    return true;
+}
+
+public void addCertificate(String certId) {
+    earnedCertificates.add(certId);
+}
+
+public Map<String, Integer> getQuizScores() { return quizScores; }
+public List<String> getEarnedCertificates() { return earnedCertificates; }
+}
