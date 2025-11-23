@@ -7,7 +7,8 @@ public class Student extends User {
     private List<String> enrolledCourses = new ArrayList<>();
     private Map<String, Integer> progress = new HashMap<>();
     private transient CourseManager courseManager;
-    private Map<String , Integer> quizScores;
+    private Map<String, Integer> quizScores = new HashMap<>();
+    private List<String> earnedCertificates = new ArrayList<>();
 
     public Student() {
         this.role = "Student";
@@ -92,10 +93,6 @@ public class Student extends User {
     public Map<String, Integer> getProgress() {
         return new HashMap<>(progress);
     }
-}
-private Map<String, Integer> quizScores = new HashMap<>();
-private List<String> earnedCertificates = new ArrayList<>();
-
 
 public void recordQuizScore(String lessonId, int score) {
     quizScores.put(lessonId, score);
