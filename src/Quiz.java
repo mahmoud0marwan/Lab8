@@ -4,8 +4,9 @@ import java.util.List;
 public class Quiz {
     private String quizID;
     private List<QuizQuestion> questions;
+    private int passingScore;
 
-    public Quiz(String quizID) {
+    public Quiz(String quizID,int passingScore) {
         this.quizID = quizID;
         this.questions = new ArrayList<>();
     }
@@ -34,4 +35,7 @@ public class Quiz {
         return score;
     }
 
+    public int getPassingScore() {
+      return passingScore;
+    }
 }
