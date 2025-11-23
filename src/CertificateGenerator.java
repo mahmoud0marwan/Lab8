@@ -15,7 +15,7 @@ public class CertificateGenerator {
         Certificate certificate = new Certificate(
                 certId,
                 c.getCourseId(),
-                s.getId(),
+                s.getUserId(),
                 date
         );
 
