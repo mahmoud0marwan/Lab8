@@ -6,6 +6,7 @@ public class Lesson {
     private String title;
     private String content;
     private List<String> resources;
+    private Quiz quiz;
 
     public Lesson(String lessonId, String title, String content) {
         this.lessonId = lessonId;
@@ -19,6 +20,14 @@ public class Lesson {
         this.title = title;
         this.content = content;
         this.resources = resources != null ? new ArrayList<>(resources) : new ArrayList<>();
+    }
+
+    public void setQuiz(Quiz quiz) {
+        this.quiz = quiz;
+    }
+
+    public Quiz getQuiz() {
+        return quiz;
     }
 
     public String getLessonId() {
