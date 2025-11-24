@@ -1,27 +1,23 @@
 [
   {
-    "courseId": "C-d1c75e28",
-    "instructorId": "U-aaf4b17d",
-    "title": "Advanced Java",
-    "description": "Learn Serialization and Polymorphism",
-    "lessons": [
-      {
-        "lessonId": "L-403ea661",
-        "title": "Chapter 1: Abstract Classes",
-        "content": "Abstract classes cannot be instantiated.",
-        "resources": []
-      }
-    ],
+    "courseId": "C-056484c1",
+    "instructorId": "U-637cc833",
+    "title": "data structures",
+    "description": "stack/queue/linked list",
+    "lessons": [],
     "students": [
       {
         "enrolledCourses": [],
         "progress": {},
-        "userId": "U-53824e7b",
-        "username": "Junior Dev",
-        "email": "student@test.com",
-        "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+        "quizScores": {},
+        "earnedCertificates": [],
+        "userId": "U-f9505d28",
+        "username": "John Student",
+        "email": "student@skillforge.com",
+        "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
         "role": "Student"
       }
-    ]
+    ],
+    "courseStatus": "Approved"
   }
 ]

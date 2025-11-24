@@ -16,7 +16,6 @@ public class JsonDatabaseManager {
         this.usersFile = usersFilePath;
         this.coursesFile = coursesFilePath;
 
-        // FIX: Custom Deserializer handles the Abstract User class
         JsonDeserializer<User> userDeserializer = (json, typeOfT, context) -> {
             JsonObject jsonObject = json.getAsJsonObject();
             JsonElement roleElement = jsonObject.get("role");
@@ -27,11 +26,12 @@ public class JsonDatabaseManager {
 
             String role = roleElement.getAsString();
 
-            // Check role and return specific subclass
             if ("Student".equalsIgnoreCase(role)) {
                 return context.deserialize(json, Student.class);
             } else if ("Instructor".equalsIgnoreCase(role)) {
                 return context.deserialize(json, Instructor.class);
+            } else if ("Admin".equalsIgnoreCase(role)) {  // <--- ADD THIS BLOCK
+                return context.deserialize(json, Admin.class);
             } else {
                 throw new JsonParseException("Unknown role: " + role);
             }
@@ -39,15 +39,12 @@ public class JsonDatabaseManager {
 
         this.gson = new GsonBuilder()
                 .setPrettyPrinting()
-                // We do NOT use .excludeFieldsWithoutExposeAnnotation() because
-                // Student and Instructor fields (like enrolledCourses) do not have @Expose tags.
                 .registerTypeAdapter(User.class, userDeserializer)
                 .create();
 
         createFileIfMissing(usersFile);
         createFileIfMissing(coursesFile);
     }
-
     public void setCourseManager(CourseManager courseManager) {
         this.courseManager = courseManager;
     }
@@ -80,7 +77,6 @@ public class JsonDatabaseManager {
                 return new ArrayList<>();
             }
 
-            // Re-inject CourseManager into loaded users
             if (courseManager != null) {
                 for (User user : users) {
                     if (user instanceof Student) {
@@ -93,7 +89,6 @@ public class JsonDatabaseManager {
 
             return users;
         } catch (Exception e) {
-            // If file is empty or corrupt, return empty list to start fresh
             System.err.println("Warning: Could not load users (" + e.getMessage() + "). Starting with empty list.");
             return new ArrayList<>();
         }
