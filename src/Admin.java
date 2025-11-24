@@ -15,11 +15,11 @@ public class Admin  extends  User{
     {
       List<Course> courses=j.loadCourses();
         List<Course> pendingCourses=new ArrayList<>();
-        for(Course course :courses)
+        for(int i=0;i<courses.size();i++)
         {
-            if (course.getCourseStatus().equals("Pending"))
+            if (courses.get(i).getCourseStatus().equalsIgnoreCase("PENDING"))
             {
-                pendingCourses.add(course);
+                pendingCourses.add(courses.get(i));
             }
 
         }
@@ -31,7 +31,7 @@ public class Admin  extends  User{
         List<Course> approvedCourses=new ArrayList<>();
         for(Course course :courses)
         {
-            if (course.getCourseStatus().equals("Approved"))
+            if (course.getCourseStatus().equalsIgnoreCase("APPROVED"))
             {
                 approvedCourses.add(course);
             }
@@ -45,7 +45,7 @@ public class Admin  extends  User{
         List<Course> rejectedCourses=new ArrayList<>();
         for(Course course :courses)
         {
-            if (course.getCourseStatus().equals("Rejected"))
+            if (course.getCourseStatus().equalsIgnoreCase("REJECTED"))
             {
                 rejectedCourses.add(course);
             }
@@ -55,10 +55,11 @@ public class Admin  extends  User{
     }
     public void approveCourse(Course course)
     {
-        course.setCourseStatus("Approved");
+        course.setCourseStatus("APPROVED");
+
     }
     public void rejectCourse(Course course)
     {
-        course.setCourseStatus("Rejected");
+        course.setCourseStatus("REJECTED");
     }
 }

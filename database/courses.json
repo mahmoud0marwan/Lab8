@@ -1,0 +1,208 @@
+[
+  {
+    "courseId": "C-7c75e21b",
+    "instructorId": "U-d856d04e",
+    "title": "data structures",
+    "description": "very good course",
+    "lessons": [
+      {
+        "lessonId": "L-d9baf82c",
+        "title": "L1",
+        "content": "stacks",
+        "resources": [],
+        "quiz": {
+          "quizID": "U-d643b999",
+          "questions": [
+            {
+              "questionText": "what",
+              "choices": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "correctAnswer": 1
+            }
+          ],
+          "passingScore": 0
+        }
+      }
+    ],
+    "students": [],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-608f6245",
+    "instructorId": "U-d856d04e",
+    "title": "prog2",
+    "description": "no desc",
+    "lessons": [],
+    "students": [
+      {
+        "enrolledCourses": [
+          "C-deca48b2",
+          "C-dab185a7"
+        ],
+        "progress": {
+          "C-deca48b2": 0,
+          "C-dab185a7": 0
+        },
+        "quizScores": {},
+        "earnedCertificates": [],
+        "userId": "U-e47bb9b5",
+        "username": "m",
+        "email": "m@.com",
+        "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+        "role": "Student"
+      }
+    ],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-92093bc5",
+    "instructorId": "U-d856d04e",
+    "title": "1",
+    "description": "1",
+    "lessons": [
+      {
+        "lessonId": "L-92b3827d",
+        "title": "1",
+        "content": "1",
+        "resources": []
+      }
+    ],
+    "students": [
+      {
+        "enrolledCourses": [
+          "C-deca48b2",
+          "C-dab185a7",
+          "C-608f6245"
+        ],
+        "progress": {
+          "C-deca48b2": 0,
+          "C-dab185a7": 0,
+          "C-608f6245": 0
+        },
+        "quizScores": {},
+        "earnedCertificates": [],
+        "userId": "U-e47bb9b5",
+        "username": "m",
+        "email": "m@.com",
+        "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+        "role": "Student"
+      }
+    ],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-dab185a7",
+    "instructorId": "U-d856d04e",
+    "title": "ma",
+    "description": "mmmmm",
+    "lessons": [
+      {
+        "lessonId": "L-97a15392",
+        "title": "l1",
+        "content": "content",
+        "resources": [],
+        "quiz": {
+          "quizID": "U-aa7612a4",
+          "questions": [
+            {
+              "questionText": "jidcn",
+              "choices": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "correctAnswer": 3
+            }
+          ],
+          "passingScore": 0
+        }
+      },
+      {
+        "lessonId": "L-2bf30b26",
+        "title": "3",
+        "content": "jdklncjndf",
+        "resources": []
+      }
+    ],
+    "students": [
+      {
+        "enrolledCourses": [
+          "C-deca48b2"
+        ],
+        "progress": {
+          "C-deca48b2": 0
+        },
+        "quizScores": {},
+        "earnedCertificates": [],
+        "userId": "U-e47bb9b5",
+        "username": "m",
+        "email": "m@.com",
+        "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+        "role": "Student"
+      }
+    ],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-c50973fe",
+    "instructorId": "U-214c50c8",
+    "title": "Sample Java Course",
+    "description": "Simple course created in main for testing persistence.",
+    "lessons": [],
+    "students": [],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-5394e684",
+    "instructorId": "U-214c50c8",
+    "title": "Sample Java Course",
+    "description": "Simple course created in main for testing persistence.",
+    "lessons": [],
+    "students": [],
+    "courseStatus": "REJECTED"
+  },
+  {
+    "courseId": "C-1cfc8ce1",
+    "instructorId": "U-214c50c8",
+    "title": "Sample Java Course",
+    "description": "Simple course created in main for testing persistence.",
+    "lessons": [],
+    "students": [],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-6d125989",
+    "instructorId": "U-214c50c8",
+    "title": "Sample Java Course",
+    "description": "Simple course created in main for testing persistence.",
+    "lessons": [],
+    "students": [],
+    "courseStatus": "APPROVED"
+  },
+  {
+    "courseId": "C-deca48b2",
+    "instructorId": "U-214c50c8",
+    "title": "Sample Java Course",
+    "description": "Simple course created in main for testing persistence.",
+    "lessons": [],
+    "students": [
+      {
+        "enrolledCourses": [],
+        "progress": {},
+        "quizScores": {},
+        "earnedCertificates": [],
+        "userId": "U-e47bb9b5",
+        "username": "m",
+        "email": "m@.com",
+        "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+        "role": "Student"
+      }
+    ],
+    "courseStatus": "APPROVED"
+  }
+]

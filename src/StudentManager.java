@@ -27,6 +27,7 @@ public class StudentManager {
             throw new RuntimeException("Course not found: " + courseId);
         }
         student.enrollCourse(courseId);
+        course.setStudentManager(this);
         course.enrollStudent(studentId);
 
         List<User> users = db.loadUsers();

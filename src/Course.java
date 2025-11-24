@@ -19,7 +19,7 @@ public class Course {
         this.lessons = new ArrayList<>();
         this.students = new ArrayList<>();
         this.studentManager = studentManager;
-        this.courseStatus="Pending";
+        this.courseStatus = "PENDING";
     }
 
     public void setStudentManager(StudentManager studentManager) {

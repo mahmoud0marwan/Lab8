@@ -1,0 +1,61 @@
+[
+  {
+    "userId": "U-b29038d4",
+    "username": "Mahmoud",
+    "email": "mahmoud@email.com",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "role": "Admin"
+  },
+  {
+    "enrolledCourses": [
+      "C-deca48b2",
+      "C-dab185a7",
+      "C-608f6245",
+      "C-92093bc5"
+    ],
+    "progress": {
+      "C-deca48b2": 0,
+      "C-dab185a7": 1,
+      "C-608f6245": 0,
+      "C-92093bc5": 0
+    },
+    "quizScores": {
+      "L-97a15392": 1
+    },
+    "earnedCertificates": [],
+    "userId": "U-e47bb9b5",
+    "username": "m",
+    "email": "m@.com",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "role": "Student"
+  },
+  {
+    "createdCourses": [],
+    "userId": "U-d856d04e",
+    "username": "i",
+    "email": "i@.com",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "role": "Instructor"
+  },
+  {
+    "createdCourses": [
+      "C-c50973fe",
+      "C-5394e684",
+      "C-1cfc8ce1",
+      "C-6d125989",
+      "C-deca48b2"
+    ],
+    "userId": "U-214c50c8",
+    "username": "Instructor One",
+    "email": "instructor@example.com",
+    "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "Instructor"
+  },
+  {
+    "userId": "U-dbf3a9f5",
+    "username": "a",
+    "email": "a@.com",
+    "passwordHash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+    "role": "Admin"
+  }
+]
